@@ -26,7 +26,7 @@ int library_add(Library* lib, Book book) {
         size_t new_capacity = (lib->capacity == 0) ? INITIAL_CAPACITY : lib->capacity * 2;
         Book* new_books = (Book*)realloc(lib->books, new_capacity * sizeof(Book));
         if (!new_books) {
-            fprintf(stderr, "Pogreska: Nedovoljno memorije za prosirenje knjižnice.\n");
+            fprintf(stderr, "Pogreska: Nedovoljno memorije za prosirenje knjiznice.\n");
             return 0;
         }
         lib->books = new_books;
@@ -70,7 +70,7 @@ const char* status_to_string(ReadingStatus status) {
 
 void library_print_all(const Library* lib) {
     if (lib->count == 0) {
-        printf("\nKnjižnica je prazna.\n");
+        printf("\nKnjiznica je prazna.\n");
         return;
     }
 

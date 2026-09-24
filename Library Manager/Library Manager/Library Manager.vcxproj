@@ -139,7 +139,11 @@
     </Manifest>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Library Manager.cpp" />
+    <ClCompile Include="Library Manager.c" />
+    <ClCompile Include="library.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="library.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
