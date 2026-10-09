@@ -1,4 +1,4 @@
-# Library Manager (C11)
+# Library Manager (C)
 
 A modular CLI application in C for managing a personal book collection with dynamic memory scaling and binary persistence.
 
